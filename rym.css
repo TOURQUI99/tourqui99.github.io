@@ -1,0 +1,186 @@
+/* Des choix de styles liés au texte de tous le contenu de la page */
+
+* {
+    font-family: normal;
+    font-size: 15px;
+    font-weight: cursive;
+    font-style: normal;
+}
+
+h1 {
+    border: 50PX;
+    text-align: center;
+    font-size: 70px;
+    font-family: cursive;
+}
+
+
+/* J'ai mis une bordure et jumeler les traits des lignes et des colonnes en un seul trait grace au border_collapse*/
+
+table {
+    border: 3px solid rgb(159, 39, 39);
+    border-collapse: collapse;
+}
+
+
+/* J'ai mis un couleur de fond ( la meme avec notre grand titre ) et souligner les textes . Ca affecte qu'
+un seule table vuque c'est la seule qui a l'element TH dans notre partie html*/
+
+th {
+    background-color: rgb(198, 157, 75);
+    text-decoration: underline;
+}
+
+
+/**/
+
+a:link {
+    color: black;
+}
+
+
+/* J'ai mis une couleur de fond quand la souris survole un certain lien dans la page*/
+
+a:hover {
+    color: #2cdbd5;
+}
+
+
+/*Pour avoir la structure demandée , il faut faire un display inline-block puis 
+le faire flotter a droite avec une largeur qund on veut , en mettant une bordure pour faire plus joli */
+
+aside {
+    width: 20%;
+    display: inline-block;
+    float: right;
+    border: 4px groove #315655;
+}
+
+
+/*J'ai fais un display inline-block puis je l'ai fais flotter en bas avec
+ une largeur de 100% , en mettant une bordure et centrant le contenu pour faire plus joli */
+
+#FOOTER {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    border: 7px brown;
+    text-align: center;
+}
+
+
+/*Pour avoir la structure demandée , il faut faire un display inline-block puis 
+le faire flotter a gauche avec une largeur qund on veut , en mettant une bordure pour faire plus joli */
+
+nav {
+    width: 10%;
+    display: inline-block;
+    float: left;
+    border: 4px groove rgb(3, 2, 2);
+}
+
+
+/*la classe content : c'est un div qui contient les 4 elements principaux :
+ nav,aside,footer et le main . J'ai regrouppé ces elements afin de les mettre en inline-block et dire 
+ qu'ils auront une position absolue afin de permettre de les positionner comme on veut. 
+ Si par exemple on aditionner la largeur des elements constituant le content on aura : 68 + 20 + 10 + 1*2(bordure exterieur et interieur de 1px) = 100% ; */
+
+#content {
+    display: inline-block;
+    position: absolute;
+}
+
+
+/*Pour avoir la structure demandée , il faut faire un display inline-block puis 
+le faire flotter au milieu avec une largeur qund on veut , en mettant une bordure pour faire plus joli */
+
+main {
+    width: 68%;
+    display: inline-block;
+    float: top;
+    border: 4px groove #121414;
+}
+
+
+/* J'ai mis tous les titres : introduction ..etc sous size 27 en les soulignant*/
+
+h2 {
+    text-decoration: underline;
+    font-size: 27px;
+    color: brown;
+    font-family: 'Comforter Brush', cursive;
+}
+
+
+/* J'ai changé le style des elements des listes non-ordonnées*/
+
+ul {
+    list-style-type: square;
+}
+
+
+/* J'ai changé le style des elements de la liste ordonnée*/
+
+ol {
+    list-style-type: lower-roman;
+}
+
+
+/* J'ai mis une position relative afin que je puisse les manipuler px par px . Puis j'ai 
+choisis les valeurs pour avoir un contenu plus au moins joli .*/
+
+#intro figure {
+    position: relatif;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: -3px;
+    color: rgb(137, 36, 36);
+    font-family: 'Outfit', sans-serif;
+    max-width: 30cm;
+}
+
+
+/* J'ai mis une position relative afin que je puisse les manipuler px par px . Puis j'ai 
+choisis les valeurs pour avoir un contenu plus au moins joli .*/
+
+#intro article p {
+    position: relative;
+    margin-right: 350px;
+    margin-top: -250px;
+    color: rgb(18, 21, 18);
+    font-family: cursive;
+}
+
+#oeuvre p {
+    color: rgb(65, 42, 145);
+    font-family: cursive;
+    font-family: 'Anton', sans-serif;
+}
+
+#bio p {
+    color: black;
+    font-family: 'Comforter Brush', 'Times New Roman', Times, serif;
+}
+
+
+/*Pour cet element : c'est element en plus pas demandé en tp mais j'ai voulu quand meme le rajouter.Ca permet de
+ mettre une video youtube directement sur la page(j'ai rajoutté aussi un lien youtube juste en dessous)*/
+
+iframe {
+    position: relative;
+    margin-left: 120px;
+}
+
+
+/*pour faire plus joli j'ai rajouter une photo de fond */
+
+body {
+    background-image: url(fondecran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* En gros voila c'est tous ce qui a . J'ai voulu mettre quelques commentaires 
+/* Mercii *________* */
